@@ -1,6 +1,6 @@
 ---
 layout: layout.vto
-title: charlieroth.github.io
+title: charlieroth.me
 ---
 
 Hi, I'm Charlie!
