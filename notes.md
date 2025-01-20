@@ -1,6 +1,4 @@
 ---
-layout: layout.vto
+layout: notes.vto
 title: Notes
 ---
-
-Currently empty, come back later!

@@ -1,0 +1,15 @@
+---
+layout: layout.vto
+---
+
+<h1>Notes</h1>
+
+<ul>
+    {{ for note of notes }}
+    <li>
+        <time datetime="{{ note.published }}">{{ note.published }}</time>
+        :
+        <a href="/notes/{{ note.slug }}/">{{ note.title }}</a>
+    </li>
+    {{ /for }}
+</ul>
