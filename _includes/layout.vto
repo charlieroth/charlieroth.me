@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
-  <body class="bg-black flex flex-col min-h-screen justify-between">
-    <header class="h-10 text-white">
+  <body class="bg-white dark:bg-black flex flex-col min-h-screen justify-between">
+    <header class="h-10">
       {{ include "navbar.vto"}}
     </header>
-    <main class="container mx-auto mb-auto mt-10 prose prose-invert px-4">
+    <main class="container mx-auto mb-auto mt-10 prose dark:prose-invert px-4">
       {{ content }}
     </main>
   </body>
