@@ -5,10 +5,10 @@ title: Blog
 
 <div class="flex flex-col gap-4 justify-center">
     {{ for post of posts }}
-        <div class="flex flex-col gap-2 bg-zinc-900 p-8 rounded-lg border border-zinc-700">
-            <a class="text-lg font-semibold underline" href="/posts/{{ post.slug }}/">{{ post.title }}</a>
-            <p class="text-sm text-zinc-400">Published: <date datetime="{{ post.published }}">{{ post.published }}</date></p>
-            <p class="text-sm text-zinc-400 italic">{{ post.description }}</p>
+        <div class="flex flex-col gap-2 bg-zinc-100 dark:bg-zinc-900 p-8 rounded-md border border-zinc-700">
+            <a class="text-lg text-black dark:text-white font-semibold underline" href="/posts/{{ post.slug }}/">{{ post.title }}</a>
+            <p class="text-sm text-black dark:text-white">Published: <date datetime="{{ post.published }}" class="font-mono">{{ post.published }}</date></p>
+            <p class="text-sm text-black dark:text-white italic">{{ post.description }}</p>
         </div>
     {{ /for }}
 </div>
