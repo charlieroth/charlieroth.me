@@ -4,11 +4,11 @@ title: Blog
 ---
 
 <div class="flex flex-col gap-4 justify-center">
-    <div class="flex flex-col gap-2 bg-zinc-900 p-8 rounded-lg border border-zinc-700">
-        {{ for post of posts }}
+    {{ for post of posts }}
+        <div class="flex flex-col gap-2 bg-zinc-900 p-8 rounded-lg border border-zinc-700">
             <a class="text-lg font-semibold underline" href="/posts/{{ post.slug }}/">{{ post.title }}</a>
             <p class="text-sm text-zinc-400">Published: <date datetime="{{ post.published }}">{{ post.published }}</date></p>
             <p class="text-sm text-zinc-400 italic">{{ post.description }}</p>
-        {{ /for }}
-    </div>
+        </div>
+    {{ /for }}
 </div>
