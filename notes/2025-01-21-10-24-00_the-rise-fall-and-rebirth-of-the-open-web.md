@@ -1,6 +1,8 @@
 ---
 layout: layout.vto
+type: note
 title: The Rise, Fall and Rebirth of the Open Web
+excerpt: An exploration of the history of the open web and the protocols that enabled it.
 ---
 
 # The Rise, Fall, and Rebirth of the Open Web
