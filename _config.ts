@@ -20,10 +20,20 @@ site.use(
     info: {
       title: "charlieroth.me",
       description: "Notes from Charlie Roth",
+      published: new Date(),
+      lang: "en",
+      generator: true,
+      authorName: "Charlie Roth",
+      authorUrl: "https://charlieroth.me",
     },
     items: {
       title: "=title",
       description: "=excerpt",
+      published: "=date",
+      updated: undefined,
+      lang: "en",
+      authorName: "Charlie Roth",
+      authorUrl: "https://charlieroth.me",
     },
   })
 );
