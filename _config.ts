@@ -3,8 +3,14 @@ import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 import typography from "npm:@tailwindcss/typography";
 import feed from "lume/plugins/feed.ts";
+import cacheBusting from "lume/middlewares/cache_busting.ts";
 
-const site = lume();
+const site = lume({
+  location: new URL("https://charlieroth.me"),
+  server: {
+    middlewares: [cacheBusting()],
+  },
+});
 site.use(
   tailwindcss({
     options: {

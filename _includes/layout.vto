@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="alternate" type="application/rss+xml" href="https://charlieroth.com/feed.xml" />
   </head>
-  <body class="bg-white dark:bg-black flex flex-col min-h-screen justify-between">
-    <header class="h-10">
+  <body class="flex flex-col h-full bg-zinc-50 dark:bg-black">
+    <header class="h-10 mb-10">
       {{ include "navbar.vto"}}
     </header>
-    <main class="container mx-auto mb-auto mt-10 prose dark:prose-invert px-4">
+    <main class="grid place-items-center mx-10 md:mx-auto">
       {{ content }}
     </main>
   </body>
