@@ -22,10 +22,10 @@ site.use(postcss());
 site.use(
   feed({
     output: ["/feed.xml", "/feed.json"],
-    query: "type=note",
+    query: "type=post",
     info: {
       title: "charlieroth.me",
-      description: "Notes from Charlie Roth",
+      description: "Blog posts by Charlie Roth",
       published: new Date(),
       lang: "en",
       generator: true,

@@ -1,5 +1,5 @@
 ---
-layout: note.vto
+layout: post.vto
 title: CV
 ---
 

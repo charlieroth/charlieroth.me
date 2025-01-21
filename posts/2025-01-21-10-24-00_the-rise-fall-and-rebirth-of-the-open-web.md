@@ -1,6 +1,6 @@
 ---
-layout: note.vto
-type: note
+layout: post.vto
+type: post
 title: The Rise, Fall and Rebirth of the Open Web
 excerpt: An exploration of the history of the open web and the protocols that enabled it.
 date: 2025-01-21
