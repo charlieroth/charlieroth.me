@@ -18,6 +18,7 @@ site.use(
     },
   })
 );
+site.copy("images");
 site.use(postcss());
 site.use(
   feed({
